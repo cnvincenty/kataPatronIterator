@@ -2,6 +2,7 @@ package bo.edu.uagrm.soe;
 
 import bo.edu.uagrm.soe.iface.Aggregate;
 import bo.edu.uagrm.soe.iface.Iterator;
+import bo.edu.uagrm.soe.iface.impl.CREUserAggregate;
 import bo.edu.uagrm.soe.iface.impl.FacebookUserAggregate;
 import bo.edu.uagrm.soe.iface.impl.GoogleUserAggregate;
 
@@ -39,6 +40,16 @@ public class IteratorApp {
         } */
 
         printItemsFrom(facebookUserAggregate.createIterator());
+
+        //User CRE
+        Aggregate CREUserAggregate = new CREUserAggregate();
+        //Iterator CREUserIterator = CREUserAggregate.createIterator();
+
+        /* while (!CREUserIterator.isDone()) {
+            System.out.println(CREUserIterator.currentItem());
+        } */
+
+        printItemsFrom(CREUserAggregate.createIterator());
     }
 
     public static void printItemsFrom(Iterator iterator) {

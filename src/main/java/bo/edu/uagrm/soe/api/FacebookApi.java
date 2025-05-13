@@ -8,12 +8,12 @@ import bo.edu.uagrm.soe.model.FacebookUser;
 public class FacebookApi {
 
     public static List<FacebookUser> getFacebookUsers() {
-        List<FacebookUser> users =
+        List<FacebookUser> facebookusers =
             Arrays.asList(
                 new FacebookUser("fa"),
                 new FacebookUser("fb"),
                 new FacebookUser("fc")
             );
-        return users;
+        return facebookusers;
     }
 }
