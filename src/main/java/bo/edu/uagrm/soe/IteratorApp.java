@@ -22,7 +22,7 @@ public class IteratorApp {
 
         //User Google
         Aggregate googleUserAggregate = new GoogleUserAggregate();
-        Iterator googleUserIterator = googleUserAggregate.createIterator();
+        //Iterator googleUserIterator = googleUserAggregate.createIterator();
 
         /* while (!googleUserIterator.isDone()) {
             System.out.println(googleUserIterator.currentItem());
@@ -32,7 +32,7 @@ public class IteratorApp {
 
         //User Facebbok
         Aggregate facebookUserAggregate = new FacebookUserAggregate();
-        Iterator facebookUserIterator = facebookUserAggregate.createIterator();
+        //Iterator facebookUserIterator = facebookUserAggregate.createIterator();
 
         /* while (!facebookUserIterator.isDone()) {
             System.out.println(facebookUserIterator.currentItem());
